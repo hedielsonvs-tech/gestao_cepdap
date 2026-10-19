@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">cepdap</string>
+    <string name="title_activity_main">cepdap</string>
+    <string name="package_name">com.cepdap.app</string>
+    <string name="custom_url_scheme">com.cepdap.app</string>
+</resources>

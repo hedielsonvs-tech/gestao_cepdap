@@ -1,0 +1,9 @@
+{
+  "appId": "com.cepdap.app",
+  "appName": "cepdap",
+  "webDir": "www",
+  "server": {
+    "url": "https://200.164.74.202/ambiente_teste/gestao_cepdap/index.php",
+    "cleartext": true
+  }
+}
