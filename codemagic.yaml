@@ -15,6 +15,9 @@ workflows:
         script: |
           chmod +x ./node_modules/.bin/cap
           npx cap sync ios
+      - name: Install Pods
+        script: |
+          cd ios/App && pod install
       - name: Build iOS Project
         script: |
           cd ios/App && xcodebuild -workspace App.xcworkspace -scheme App -configuration Debug -sdk iphonesimulator CODE_SIGNING_ALLOWED=NO
