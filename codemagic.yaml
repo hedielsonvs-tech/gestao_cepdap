@@ -13,6 +13,7 @@ workflows:
           npm install
       - name: Capacitor Sync
         script: |
+          chmod +x ./node_modules/.bin/cap
           npx cap sync ios
       - name: Build iOS Project
         script: |
