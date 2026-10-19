@@ -17,6 +17,6 @@ workflows:
           npx cap sync ios
       - name: Build iOS Project
         script: |
-          cd ios/App && xcodebuild -workspace App.xcworkspace -scheme App -configuration Debug CODE_SIGNING_ALLOWED=NO
+          cd ios/App && xcodebuild -workspace App.xcworkspace -scheme App -configuration Debug -sdk iphonesimulator CODE_SIGNING_ALLOWED=NO
     artifacts:
-      - ios/App/build/Outputs/bundle/Debug/*.app
+      - ios/App/build/Release-iphonesimulator/*.app
