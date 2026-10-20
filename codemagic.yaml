@@ -16,7 +16,6 @@ workflows:
           chmod +x ./node_modules/.bin/cap
           npx cap sync ios
       - name: Build iOS Project
+        working_directory: ios/App
         script: |
-          cd ios/App && xcodebuild -workspace App.xcworkspace -scheme App -configuration Debug -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO
-    artifacts:
-      - ios/App/build/Release-iphonesimulator/*.app
+          xcodebuild -workspace App.xcworkspace -scheme App -configuration Debug -sdk iphonesimulator -destination "generic/platform=iOS Simulator" CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO
