@@ -19,3 +19,4 @@ workflows:
         working_directory: ios/App
         script: |
           xcodebuild -workspace App.xcworkspace -scheme App -configuration Debug -sdk iphonesimulator -destination "generic/platform=iOS Simulator" CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO
+          
